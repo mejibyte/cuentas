@@ -1,0 +1,24 @@
+<% title "Pagos" %>
+
+<table>
+  <tr>
+    <th>Fecha de pago</th>
+    <th>Habitante</th>
+    <th>Precio</th>
+    <th>Descripción</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% for payment in @payments %>
+    <tr>
+      <td><%= payment.paid_on %></td>
+      <td><%= payment.user %></td>        
+      <td><%= number_to_currency(payment.price) %></td>
+      <td><%= payment.description %></td>
+      <td><%= link_to "Editar", edit_payment_path(payment) %></td>
+      <td><%= link_to "Suprimir", payment, :confirm => '¿Estás seguro?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "Agregar pago", new_payment_path(payment) %></p>

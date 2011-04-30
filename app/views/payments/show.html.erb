@@ -1,0 +1,24 @@
+<% title "Pago" %>
+
+<p>
+  <strong>Precio:</strong>
+  <%= number_to_currency(@payment.price) %>
+</p>
+<p>
+  <strong>Descripción:</strong>
+  <%= @payment.description %>
+</p>
+<p>
+  <strong>Fecha de pago:</strong>
+  <%= @payment.paid_on %>
+</p>
+<p>
+  <strong>Habitante:</strong>
+  <%= @payment.user %>
+</p>
+
+<p>
+  <%= link_to "Editar", edit_payment_path(@payment) %> |
+  <%= link_to "Suprimir", @payment, :confirm => '¿Estás seguro?', :method => :delete %> |
+  <%= link_to "Ver todos los pagos", payments_path %>
+</p>

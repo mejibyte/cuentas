@@ -1,0 +1,11 @@
+es:
+  activerecord:
+    models:
+      payment: pago
+      user: habitante
+    attributes:
+      payment:
+        price: "Precio"
+        description: "Descripción"
+        paid_on: "Fecha de pago"
+        user: "Habitante"

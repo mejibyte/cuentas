@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,3 +31,4 @@ gem "nifty-generators"
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test

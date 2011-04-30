@@ -1,0 +1,11 @@
+one:
+  price: 1
+  description: MyText
+  paid_on: 2011-04-30
+  user: 
+
+two:
+  price: 1
+  description: MyText
+  paid_on: 2011-04-30
+  user: 
