@@ -14,7 +14,7 @@
     <td><%= user.name %></td>
     <td><%= user.email %></td>
     <td><%= format_balance(user.balance) %></td>
-    <td><%= link_to 'Ver detalles', user %></td>
+    <td><%= link_to "Ver pagos hechos por #{user.name}", user %></td>
     <td><%= link_to 'Editar', edit_user_path(user) %></td>
   </tr>
 <% end %>
