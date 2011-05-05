@@ -77,3 +77,11 @@ a {
 td {
   padding: 5px;
 }
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;  
+}

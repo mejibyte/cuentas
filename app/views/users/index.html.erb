@@ -13,7 +13,7 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.email %></td>
-    <td><%= number_to_currency(user.balance) %></td>
+    <td><%= format_balance(user.balance) %></td>
     <td><%= link_to 'Ver detalles', user %></td>
     <td><%= link_to 'Editar', edit_user_path(user) %></td>
   </tr>
