@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:signed_in] = true
       redirect_to_stored_location
     else
-      redirect_to new_session_path, :notice => "Password equivocado."
+      redirect_to new_session_path, :alert => "Password equivocado."
     end
   end
   
