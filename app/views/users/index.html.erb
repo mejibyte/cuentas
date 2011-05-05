@@ -1,8 +1,8 @@
-<h1>Listing users</h1>
+<h1>Habitantes</h1>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>Nombre</th>
     <th>Email</th>
     <th></th>
     <th></th>
@@ -13,13 +13,11 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.email %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Ver detalles', user %></td>
+    <td><%= link_to 'Editar', edit_user_path(user) %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New User', new_user_path %>
