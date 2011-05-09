@@ -1,0 +1,16 @@
+Hola,
+
+El <%= l(@payment.paid_on, :format => :long) %> <%= @user.name %> agregó un nuevo pago de <%= number_to_currency(@payment.price) %>.
+
+<%= @user.name %> dio la siguiente descripción: "<%= @payment.description %>".
+
+========================
+Los nuevos balances son:
+
+<% User.all.each do |user| %>
+* <%= user.name %>: <%= number_to_currency(user.balance) %>
+<% end %>
+
+Un saludo,
+
+El robot automático que manda un email cada vez que alguien agrega un pago.
