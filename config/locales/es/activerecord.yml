@@ -9,3 +9,4 @@ es:
         description: "Descripción"
         paid_on: "Fecha de pago"
         user: "Habitante"
+        user_id: "Habitante"

@@ -2,7 +2,7 @@
   <%= f.error_messages %>
   <p>
     <%= f.label :user %><br />
-    <%= f.select :user_id, options_from_collection_for_select(User.all, "id", "name") %>
+    <%= f.select :user_id, options_from_collection_for_select(User.all, "id", "name", @payment.user_id), :include_blank => true %>
   </p>
   <p>
     <%= f.label :price %><br />
