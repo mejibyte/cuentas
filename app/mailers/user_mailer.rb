@@ -1,6 +1,6 @@
 # encoding: utf-8
 class UserMailer < ActionMailer::Base
-  default :from => "andmej@gmail.com"
+  default :from => "Nuestro Apartamento <andmej@gmail.com>"
     
   def new_payment_made(payment)
     @payment = payment
