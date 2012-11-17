@@ -7,13 +7,12 @@ gem 'rails', '3.0.7'
 
 group :development do
   gem 'sqlite3'
+  gem "taps"
 end
 
 group :production do
   gem 'pg'
 end
-
-gem "taps"
 
 gem "nifty-generators"
 
